@@ -1,0 +1,1665 @@
+===============
+Initial Connection!!!
+Closing WebSocket Connection for step. 
+End of log
+===============
+===============
+Initial Connection!!!
+<Connection host=10.54.63.75 user=celadon port=30482>
+Starting command: cd /home/celadon/workspace && source build/envsetup.sh && lunch aaos_iasw-userdebug && make BUILD_NUMBER=ARe000187 flashfiles publish_ci USE_PREBUILT_MESA=true BASE_LTS2024_ANDROID_KERNEL=true publish_gptimage -j 95
+including device/intel/common/vendorsetup.sh
+
+including device/intel/mixins/vendorsetup.sh
+
+including vendor/intel/utils/vendorsetup.sh
+
+05:15:30 Build sandboxing disabled due to nsjail error.
+
+basename: missing operand
+
+Try 'basename --help' for more information.
+
+device/intel/project-celadon/aaos_iasw/BoardConfig.mk:185: warning: TARGET_USES_64_BIT_BINDER has been deprecated. All devices use 64-bit binder by default now. Uses of TARGET_USES_64_BIT_BINDER should be removed..
+
+basename: Needs 1 argument (see "basename --help")
+
+device/intel/project-celadon/aaos_iasw/BoardConfig.mk:185: warning: TARGET_USES_64_BIT_BINDER has been deprecated. All devices use 64-bit binder by default now. Uses of TARGET_USES_64_BIT_BINDER should be removed..
+
+
+
+============================================
+
+PLATFORM_VERSION_CODENAME=REL
+
+PLATFORM_VERSION=15
+
+TARGET_PRODUCT=aaos_iasw
+
+TARGET_BUILD_VARIANT=userdebug
+
+TARGET_ARCH=x86_64
+
+TARGET_ARCH_VARIANT=silvermont
+
+TARGET_CPU_VARIANT=generic
+
+TARGET_2ND_ARCH=x86
+
+TARGET_2ND_ARCH_VARIANT=silvermont
+
+TARGET_2ND_CPU_VARIANT=generic
+
+HOST_OS=linux
+
+HOST_OS_EXTRA=Linux-6.8.0-52-generic-x86_64-Ubuntu-22.04.4-LTS
+
+HOST_CROSS_OS=windows
+
+BUILD_ID=AP4A.241205.013.C1
+
+OUT_DIR=out
+
+============================================
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Wondering whether to use user, userdebug or eng?
+
+
+
+  user        The builds that ship to users. Reduced debugability.
+
+  userdebug   High fidelity to user builds but with some debugging options
+
+              enabled. Best suited for performance testing or day-to-day use
+
+              with debugging enabled.
+
+  eng         More debugging options enabled and faster build times, but
+
+              runtime performance tradeoffs. Best suited for day-to-day
+
+              local development when not doing performance testing.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+Apply utils/aosp_diff/preliminary patches:
+
+Path: preliminary has 91 patch file(s) to apply!
+
+
+
+Project ./art
+
+	Applying		0001-Auto-Fast-JNI-Optimization.patch
+
+	Applying		0002-Coverity-Fixes.patch
+
+	Applying		0003-Fixed-static-analysis-issue.patch
+
+	Applying		0004-Implement-AVX2-instructions-in-x64-assembler.patch
+
+	Applying		0005-Introduce-the-notion-of-vector-registers.patch
+
+	Applying		0006-Implement-AVX2-based-Vectorization-for-x86_64.patch
+
+
+
+Project ./bionic
+
+	Applying		0001-Update-libdl-bionic-library.patch
+
+	Applying		0002-WA-Fixed-build-error-in-bionic.patch
+
+	Applying		0003-Optimize-bionic-memory-functions-with-avx2-instructi.patch
+
+	Applying		0004-Optimize-bionic-string-functions-with-avx-implementa.patch
+
+	Applying		0005-avx2-implementation-for-memmove-api.patch
+
+
+
+Project ./bootable/recovery
+
+	Applying		01_0001-Support-ota-update-from-udisk.patch
+
+	Applying		02_0002-fastbootd-sleep-several-seconds-to-wait-for-ethernet.patch
+
+	Applying		03_0003-Use-Device-instead-of-RecoveryUI.patch
+
+
+
+Project ./build/make
+
+	Applying		0001-Allow-link-to-native-platform-and-vndk_private.patch
+
+	Applying		0002-REVERTME-Allow-overrides-for-below-make-variables.patch
+
+	Applying		0003-Fix-signapk.jar-path-for-RELEASE_BUILD-true-case.patch
+
+	Applying		0004-WA-Revert-Handle-zip64-extra-fields-better.patch
+
+	Applying		0006-Revert-Add-an-execution-check-for-BOARD_KERNEL_VERSI.patch
+
+	Applying		0007-fix-ota-update-failure-cause-by-vabc-config-change.patch
+
+
+
+Project ./build/release
+
+	Applying		0001-Update-RELEASE_PLATFORM_SECURITY_PATCH-string.patch
+
+
+
+Project ./build/soong
+
+	Applying		0001-Add-support-for-overide_lib_name-for-IA-perf-variant.patch
+
+	Applying		0002-Enable-path-restrictions-for-Android-11.patch
+
+	Applying		0002-WA-Build-soong-errors.patch
+
+	Applying		0004-Adding-the-dpkg-deb-package-needed-to-create-deb.patch
+
+	Applying		0006-Allow-build-commands-to-make-Celadon-as-ISO-format-i.patch
+
+
+
+Project ./development/python-packages
+
+	Applying		0001-Adding-mako-module-to-python-development-packages.patch
+
+
+
+Project ./external/angle
+
+	Applying		0001-Vulkan-Don-t-require-renderability-in-AHBs.patch
+
+	Applying		0002-Vulkan-populate-ycbcr-conversionDesc-for-yuv-VkForma.patch
+
+
+
+Project ./external/boringssl
+
+	Applying		0001-WA-Fixed-build-error-in-boringssl.patch
+
+
+
+Project ./external/drm_hwcomposer
+
+	Applying		0001-Use-private-drm_hwcomposer-instead-of-external-drm_h.patch
+
+
+
+Project ./external/libdrm
+
+	Applying		0001-use-private-libdrm-instead-of-external-libdrm.patch
+
+	Applying		0002-Using-private-libs-instead-of-google-libs.patch
+
+
+
+Project ./external/libva
+
+	Applying		0001-Updating-libva-build-libs-according-to-latest-Code.patch
+
+
+
+Project ./external/minigbm
+
+	Applying		0001-Remove-aidl-libminigbm_gralloc_-and-gralloc.-Android.patch
+
+
+
+Project ./external/selinux
+
+	Applying		0001-Init-members-for-avtab_match_args-before-using.patch
+
+
+
+Project ./external/thermal_daemon
+
+	Applying		0001-Disable-libicuuc-lib-fro-A15.patch
+
+
+
+Project ./external/virglrenderer
+
+	Applying		0001-libgbm-is-not-used-by-IA.patch
+
+
+
+Project ./external/wpa_supplicant_8
+
+	Applying		0001-Fix-wifi-connection-failure.patch
+
+
+
+Project ./frameworks/av
+
+	Applying		0001-fixed-audio-crash-issue.patch
+
+	Applying		0007-Dynamically-disable-audio-codes.patch
+
+
+
+Project ./frameworks/base
+
+	Applying		0001-HWUI-Fallback-to-Medium-priority-when-high-is-not-pe.patch
+
+	Applying		0011-Avoiding-Error-logs-During-framework-boot.patch
+
+	Applying		0012-Enable-ART-AutoFastJni.patch
+
+	Applying		0013-enforce-limits-for-VisualVoicemailSmsFilterSettings-properties.bulletin.patch
+
+	Applying		0014-Ensure-group-summary-and-any-notifications-added-directly-by-NM.bulletin.patch
+
+	Applying		0015-Inline-SECURE_ALLOWLIST_TOKEN.bulletin.patch
+
+	Applying		0016-Update-checkKeyIntent.bulletin.patch
+
+	Applying		0017-Limit-the-size-of-vibration-effects-stored-on-a-NotificationChan.patch
+
+	Applying		0018-Pass-SafeActivityOptions-with-actual-caller-for-startActivityInT.bulletin.patch
+
+	Applying		0019-CDM-Check-if-it-s-system-UID-for-hidden-Perm-Sync-APIs.bulletin.patch
+
+	Applying		0020-Always-show-all-approved-apps.bulletin.patch
+
+
+
+Project ./frameworks/native
+
+	Applying		0001-Use-BRGA-as-default-format-for-software-rendering.patch
+
+	Applying		0002-InputDevice-Use-location-for-idc-file.patch
+
+	Applying		0003-binder-fix-FD-handling-in-continueWrite.bulletin.patch
+
+	Applying		0004-libbinder-Parcel-grow-rejects-large-data-pos.bulletin.patch
+
+	Applying		0005-libbinder-Parcel-validate-read-data-before-write.bulletin.patch
+
+
+
+Project ./frameworks/opt/net/wifi
+
+	Applying		0001-Add-Intel-Wi-Fi-hal.patch
+
+
+
+Project ./hardware/interfaces
+
+	Applying		0001-Enable-AIDL-interface-for-Light-HAL.patch
+
+	Applying		0002-Mark-USB-camera-to-back-camera-always.patch
+
+	Applying		0003-Change-Lens-Facing-to-External-for-External-Camera-H.patch
+
+	Applying		0004-usb-camera-hot-plug-not-working.patch
+
+	Applying		0005-Add-support-for-advanced-USB-3.x-based-Cameras.patch
+
+	Applying		0006-Add-the-memtrack-AIDL-HAL-implement.patch
+
+	Applying		0007-Fix-for-Camera-Issue.patch
+
+	Applying		0008-Fix-to-boot-A15-with-Aidl-Gatekeeper.patch
+
+
+
+Project ./hardware/libhardware
+
+	Applying		0001-Keymaster-Add-new-keymaster-error-code-for-provision.patch
+
+
+
+Project ./packages/apps/Camera2
+
+	Applying		01_0001-Changes-to-support-external-camera.patch
+
+	Applying		02_0002-Audio-source-selectin.patch
+
+	Applying		03_0003-Captured-image-show-black-in-image-view.patch
+
+	Applying		04_0004-Handle-WindowInsets-for-Camera2-Settings-Fragment.patch
+
+	Applying		05_0005-Apply-Window-Insets-for-MainCameraActivity.patch
+
+
+
+Project ./packages/apps/Car/Settings
+
+	Applying		0001-Show-IP-address-in-car-settings.patch
+
+
+
+Project ./packages/apps/DocumentsUI
+
+	Applying		0001-Prevent-clickjacking-attack-in-DocsUi-.bulletin.patch
+
+
+
+Project ./packages/apps/Settings
+
+	Applying		0001-CDM-NLS-Check-if-the-NLS-service-has-an-intent-filter.bulletin.patch
+
+
+
+Project ./packages/modules/Bluetooth
+
+	Applying		0001-Enable-NBS-as-sco-driver-supports-it.patch
+
+
+
+Project ./packages/modules/NetworkStack
+
+	Applying		0001-Fix-for-Android-15-Ip-Provisioning-Failure.patch
+
+
+
+Project ./packages/modules/Permission
+
+	Already applied		0001-Fix-Dynamic-Permission-group-auto-grant-behaivor.bulletin.patch
+
+
+
+Project ./packages/services/Telephony
+
+	Applying		0001-Fix-for-android.security.cts.CVE_2023_20913-failure.patch
+
+	Already applied		0002-enforce-the-calling-package-is-the-default-dialer-for-VisualVoic.bulletin.patch
+
+
+
+Project ./prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8
+
+	Applying		01_0001-Using-gcc-bin-fron-Android-12.patch
+
+
+
+Project ./system/core
+
+	Applying		01_1-Add-support-for-creation-of-usb-pri.patch
+
+
+
+Project ./system/linkerconfig
+
+	Applying		01_0001-add-namespace-change-for-houdini.patch
+
+
+
+Project ./system/media
+
+	Applying		0001-Increase-period-size-to-improve-USB-Audio-quality.patch
+
+
+
+Project ./system/sepolicy
+
+	Applying		06_0006-prebuilt-Allow-adbd-to-use-vsock_socket.patch
+
+	Applying		08_0008-Allow-tcp-socket-permission-for-sensor-domain.patch
+
+	Applying		09_0009-Fix-Sensor-related-sepolicy-check.patch
+
+	Applying		11_0011-Change-the-memtrack-aidl-hal-service-name.patch
+
+	Applying		12_0012-Fixed-Sepolicy-Build-Issue.patch
+
+
+
+Project ./system/vold
+
+	Applying		0001-PATCH-WA-CIV-Vold-SD-and-USB-handling-for-CIV.patch
+
+
+
+Project ./test/vts-testcase/kernel/gki
+
+	Applying		0001-Excluding-gki-testcases-for-android_x86-x86_64.patch
+
+
+
+Apply utils/bsp_diff/common Patches:
+
+Path: common has 8 patch file(s) to apply!
+
+
+
+Project ./device/intel/sepolicy
+
+	Applying		0003-Modify-aidl-BT-HAL-service-in-sepolicy.patch
+
+
+
+Project ./hardware/intel/external/media/hdcp
+
+	Applying		0001-WA-Fixed-build-error-in-media-deamon.patch
+
+
+
+Project ./kernel/lts2023-chromium
+
+	Applying		0001-PATCH-ACPI-PM-Propagate-power-button-event.patch
+
+
+
+Project ./vendor/intel/external/apps/camera
+
+	Applying		0001-Using-org.apache.http.legacy.stubs.patch
+
+
+
+Project ./vendor/linux/firmware
+
+	Applying		0001-Add-SOF-firmware-and-topology-files.patch
+
+	Applying		0002-Add-the-88-ucode-firmware-for-Wi-Fi.patch
+
+	Applying		0003-Update-WLAN-FW-for-AX211-MA-sample.patch
+
+	Applying		0004-dkms-add-dg2-kernel-modules-as-binary.patch
+
+
+
+		SUCCESS : All patches applied successfully in: aosp_diff and bsp_diff !!
+
+
+
+		INFO : SOME PATCHES ARE APPLIED ALREADY  !!
+
+
+
+=============================
+
+Embargoed Patches Found
+
+=============================
+
+
+
+Apply utils_priv/aosp_diff/preliminary Patches:
+
+Path: preliminary has 17 patch file(s) to apply!
+
+
+
+Project ./art
+
+	Applying		0001-Increasing-stack-framesize-art-exception-handler.patch
+
+
+
+Project ./external/aac
+
+	Applying		0001-Aac-Decoder-Optimization-with-avx2-intrinsics.patch
+
+
+
+Project ./external/cblas
+
+	Applying		0001-Replace-original-cblas-functions-with-MKL-cblas-func.patch
+
+	Applying		0002-Update-libblas-to-use-LFS-object-libmkl_core.patch
+
+	Applying		0003-Static-linking-MKL-libraries.patch
+
+
+
+Project ./external/eigen
+
+	Applying		0001-Create-a-static-library-libmkladd-which-contains-def.patch
+
+
+
+Project ./external/libavc
+
+	Applying		0001-Optmizing-Libavc-video-sw-decoder-with-IntelAVX2-int.patch
+
+
+
+Project ./external/lz4
+
+	Applying		0001-Enable-IPP-optimizations-for-lz4.patch
+
+	Applying		0002-Use-absolute-path-when-dlopen-ing-IPP-library.patch
+
+	Applying		0003-Make-IPP-APIs-weak-to-pass-ABI-compatibilty-check.patch
+
+	Applying		0004-Fix-the-seg-fault-when-using-IPP-encode-API.patch
+
+	Applying		0005-Fix-for-Oneapi-lz4-patchs-porting.patch
+
+	Applying		0006-Avoid-redistribution-of-IPP-and-MKL-libraries.patch
+
+
+
+Project ./frameworks/av
+
+	Applying		0001-Fix-for-STS-effects-test.patch
+
+
+
+Project ./frameworks/base
+
+	Applying		0001-Adding-in-verification-of-calling-UID-in-onShellComm.patch
+
+
+
+Project ./system/core
+
+	Applying		0001-Adding-the-libdl_static-in-A14.patch
+
+
+
+Project ./toolchain/pgo-profiles
+
+	Applying		0001-Enabling-afdo-profiles-for-x86_64.patch
+
+
+
+Apply utils_priv/aosp_diff Target aaos_iasw Patches:
+
+Path: aaos_iasw has 30 patch file(s) to apply!
+
+
+
+Project ./bootable/recovery
+
+	Applying		0001-Enable-LIC-on-AAOS15.patch
+
+
+
+Project ./build/make
+
+	Applying		0001-Fix-for-missing-vendor-lib-modules-folder.patch
+
+
+
+Project ./build/release
+
+	Applying		0001-Set-default-concurrent-user-restriction.patch
+
+	Applying		0002-Set-revamped_bouncer_messages-flag-value-to-false.patch
+
+	Applying		0003-Fixed-issue-to-set-date-time-in-DUT.patch
+
+
+
+Project ./build/soong
+
+	Applying		0001-solve-pahole-is-not-allowed-to-be-used-in-build-issu.patch
+
+	Applying		0002-Enable-LIC-on-AAOS15.patch
+
+
+
+Project ./external/tinyalsa
+
+	Applying		0001-Enable-HW-param-passing-from-audio_hal_configuration.patch
+
+
+
+Project ./frameworks/av
+
+	Already applied		0001-Fix-for-STS-effects-test.patch
+
+	Applying		0002-Fix-USB-audio-capture-fail.patch
+
+
+
+Project ./frameworks/base
+
+	Applying		0001-Enable-BT-for-ivi.patch
+
+
+
+Project ./frameworks/native
+
+	Applying		0001-Enable-LIC-for-AAOS15.patch
+
+
+
+Project ./frameworks/opt/car/services
+
+	Already applied		0001-Add-shell-command-to-assign-unassign-user-to-extra-d.patch
+
+
+
+Project ./hardware/interfaces
+
+	Applying		0001-Update-default-KeyMint-version-to-3.patch
+
+	Applying		0002-Allow-modification-of-vehicle-HAL-properties.patch
+
+
+
+Project ./packages/apps/Car/LocalMediaPlayer
+
+	Applying		0001-Fixed-for-audio-files-not-displaying-in-LocalMediaPl.patch
+
+
+
+Project ./packages/apps/Car/Settings
+
+	Applying		0002-Set-default-concurrent-user-restriction-for-bluetoot.patch
+
+	Applying		0003-Set-default-concurrent-user-restriction.patch
+
+
+
+Project ./packages/modules/Permission
+
+	Applying		0001-WA-Fixed-for-always-ask-permission-issue.patch
+
+
+
+Project ./packages/services/Car
+
+	Applying		0001-Enable-HID-and-OPP-profiles-for-aaos.patch
+
+	Applying		0002-Modify-evs-HAL-API-version-to-2.patch
+
+	Applying		0003-enable-evs-manager-service.patch
+
+	Applying		0004-not-disable-camera-service-in-aaos-build.patch
+
+	Applying		0012-Enable-Camera2-as-default-buildin-app.patch
+
+	Already applied		0016-Add-shell-command-to-assign-unassign-user-to-extra-d.patch
+
+	Applying		0017-Revert-Remove-unused-MultiDisplaySecondaryHomeTestLa.patch
+
+
+
+Project ./packages/services/Telephony
+
+	Applying		0001-Fix-java-crash-when-Bluetooth-MAP-profile-connects.patch
+
+
+
+Project ./system/core
+
+	Applying		0001-Updated-product-name-and-device-properties.patch
+
+
+
+Project ./system/linkerconfig
+
+	Applying		0001-houdini-namespace-adjuest.patch
+
+
+
+Project ./system/sepolicy
+
+	Applying		0001-Fix-aaos_iasw-user-build-issue.patch
+
+
+
+Apply utils_priv/bsp_diff/common Patches:
+
+Path: common has 34 patch file(s) to apply!
+
+
+
+Project ./device/intel/common
+
+	Applying		0002-Add-xe-firmwares-for-LNL-and-PTL.patch
+
+
+
+Project ./device/intel/mixins
+
+	Applying		0001-Enable-and-load-Intel-Bluetooth-PCIE-module.patch
+
+	Applying		0003-Disable-Bluetooth-LE-Audio-profiles-to-fix-crash.patch
+
+	Applying		0004-Add-and-enable-virtio-camera-config.patch
+
+	Applying		0006-Add-openvino-npu-driver-and-compiler-packages.patch
+
+	Applying		0006-Add-xe-firmwares-for-LNL-and-PTL.patch
+
+	Applying		0007-Add-npu-firmware-for-PTL.patch
+
+	Applying		0008-Add-openvino-delegate-files-to-product.patch
+
+	Applying		0009-Add-Openvino.genai-product-packages.patch
+
+
+
+Project ./hardware/intel/external/mesa3d-intel
+
+	Applying		0001-Add-mesa-prebuilt-based-on-cp-1023-commit-6f6b9d68f.patch
+
+
+
+Project ./kernel/linux-intel-lts2023
+
+	Applying		0001-crashdump-ivi-shmem-driver.patch
+
+
+
+Project ./kernel/lts2024-android
+
+	Applying		0001-wifi-iwlwifi-bump-FW-API-to-96-for-BZ-SC-devices.patch
+
+	Applying		0002-INTERNAL-Bluetooth-btintel_pcie-Add-device-ID-e476-f.patch
+
+	Applying		0003-Bluetooth-btintel_pcie-Add-support-for-Scorpious-Pea.patch
+
+	Applying		0004-Bluetooth-btintel-Add-support-for-Scorpios-to-print-.patch
+
+	Applying		0005-Bluetooth-btintel-Add-support-to-BT-USB-transport.patch
+
+
+
+Project ./kernel/modules/intel-gpu-i915-backports
+
+	Applying		0001-add-driver-config.patch
+
+	Applying		0002-rename-Makefile-to-Makefile.bak.patch
+
+	Applying		0003-add-Makefile-for-android-build-system.patch
+
+	Applying		0004-load-huc-and-guc.patch
+
+	Applying		0005-rename-i915-to-i915_ag.patch
+
+	Applying		0006-i915_ag-only-detect-dgpu.patch
+
+	Applying		0007-drm-i915-Add-deviceptr-ioctl-for-importing-lmem-obje.patch
+
+	Applying		0008-drm-i915-Share-local-memory-object-with-virtio-GPU.patch
+
+	Applying		0009-drm-i915-lmem-dmabuf-export-support-for-buffer-shari.patch
+
+	Applying		0010-Add-6.6-driver-config-file.patch
+
+	Applying		0011-Fix-build-errror-with-6.6.44-tag.patch
+
+	Applying		0012-dkms-rename-i915_compat.ko-to-compat.ko.patch
+
+
+
+Project ./vendor/linux/firmware
+
+	Applying		0001-Update-dg2-firmware-for-tag-I915_24WW30.4_803.75_23..patch
+
+	Already applied		0002-dkms-add-dg2-kernel-modules-as-binary.patch
+
+	Applying		0003-Add-PTL-GuC-and-HuC-firmware-for-use-with-kernel-v6..patch
+
+	Applying		0004-INTERNAL-Add-Wi-Fi-and-BT-firmwares-for-WhalePeak-mo.patch
+
+	Applying		0005-Enable-On-board-SOF-audio-codec-for-PTL.patch
+
+	Applying		0006-media-ipu7-add-the-initial-firware-bin.patch
+
+
+
+Apply utils_priv/bsp_diff Target aaos_iasw Patches:
+
+Path: aaos_iasw has 31 patch file(s) to apply!
+
+
+
+Project ./device/intel/build
+
+	Applying		0001-Enable-LIC-for-AAOS15.patch
+
+
+
+Project ./device/intel/mixins
+
+	Applying		0005-setprop-vendor.usb.controller-dwc3.0.auto.patch
+
+	Already applied		0007-Remove-32bit-support-in-AAOS14.patch
+
+	Already applied		0019-Fix-VTS-for-Audio.patch
+
+	Applying		0027-Enable-WIFI-AP-and-STA-dual-mode.patch
+
+	Applying		0029-no-mount-for-houdini.patch
+
+	Applying		0034-move-iw-from-system-bin-to-vendor-bin.patch
+
+	Applying		0038-Enable-LIC-for-AAOS15.patch
+
+	Applying		0039-Fix-bt-crash-by-loading-Bluetooth-Audio-HAL.patch
+
+	Applying		0040-Modify-the-kernel-6.12.8-configuration-for-Docker-an.patch
+
+
+
+Project ./device/intel/project-celadon/aaos_iasw
+
+	Applying		0001-Change-super-partition-size-in-mixins.spec.patch
+
+
+
+Project ./device/intel/project-celadon/base_aaos
+
+	Applying		0002-Fixed-graphics-allocator-hal-issue.patch
+
+
+
+Project ./device/intel/sepolicy
+
+	Applying		0001-Enable-LIC-for-AAOS15.patch
+
+	Applying		0005-Adding-Sepolicy-permission-for-Phy0.patch
+
+	Applying		0006-Adding-Sepolicy-permission-for-Phy0-on-POC-platform.patch
+
+	Applying		0007-Fix-for-sepolicy-blocking-iw-in-creating-wifi-AP-int.patch
+
+
+
+Project ./hardware/intel/external/mesa3d-intel
+
+	Conflicts		0001-Fixed-for-missing-graphics-libraries.patch
+
+
+
+Project ./hardware/intel/kernelflinger
+
+	Already applied		0053-fix-Build-Error-in-kernelflinger.patch
+
+	Applying		0055-WA-Fixed-build-error-in-kernelflinger.patch
+
+
+
+Project ./hardware/intel/wlan/libwifihal/open
+
+	Applying		0001-Add-Wlan1-interface-for-Ap-Creation.patch
+
+
+
+Project ./kernel/linux-intel-lts2023
+
+	Applying		0001-virtio-only-reset-device-and-restore-status-if-neede.patch
+
+
+
+Project ./kernel/lts2024-android
+
+	Applying		0001-virtio-only-reset-device-and-restore-status-if-neede.patch
+
+
+
+Project ./vendor/intel/hardware/interfaces
+
+	Applying		0001-WR-start-surround-view-camera-only-for-reverse-gear.patch
+
+
+
+Project ./vendor/intel/hardware/interfaces/iacamera
+
+	Applying		0001-Add-a15_camera_config_dev.xml.patch
+
+
+
+Project ./vendor/intel/houdini
+
+	Applying		0001-move-houdini-to-system.patch
+
+
+
+Project ./vendor/intel/optee/optee_apps
+
+	Applying		0001-Fix-issues-of-optee-keymaster.patch
+
+	Applying		0002-Change-optee-GK-hal-implementation-from-HIDL-to-AIDL.patch
+
+	Applying		0003-Remove-sharedsecret.patch
+
+	Applying		0004-Remove-PAGE_SIZE-usage.patch
+
+	Applying		0005-Set-and-destroy-attestation-ids-tools.patch
+
+
+
+Project ./vendor/intel/optee/optee_client
+
+	Applying		0001-android-convert-.mk-files-to-.bp.patch
+
+
+
+		ALERT : Conflicts Observed while patch application !!           
+
+./hardware/intel/external/mesa3d-intel
+
+
+
+		Error: Please resolve Conflict(s) and re-run lunch...
+
+Executing mixin update...
+
+Updater-aaos_iasw: processing: device/intel/project-celadon/aaos_iasw/mixins.spec
+
+Updater-aaos_iasw: mixinsdir: device/intel/mixins/groups
+
+Updater-aaos_iasw: Non-accumulative assignment to 'PRODUCT_COPY_FILES' found in device/intel/mixins/groups/device-specific/aaos_iasw/BoardConfig.mk
+
+Updater-aaos_iasw: Non-accumulative assignment to 'PRODUCT_COPY_FILES' found in device/intel/mixins/groups/graphics/auto/BoardConfig.mk
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/BoardConfig.mk
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/init.rc
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/init.recovery.rc
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/fstab
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/fstab.recovery
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/device.mk
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/ueventd.rc
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/AndroidBoard.mk
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/gpt.ini
+
+Updater-aaos_iasw: updating file device/intel/project-celadon/aaos_iasw/flashfiles.ini
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/bluetooth/android.hardware.telephony.automotive.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/audio/auto_hal.in
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/media/auto_hal.in
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/media/igfx_user_feature_next.txt
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/graphics/auto_hal.in
+
+Updater-aaos_iasw: chmod 0o775 device/intel/project-celadon/aaos_iasw/extra_files/graphics/auto_hal.in 
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/graphics/intel.icd
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/camera-ext/external_camera_config.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/camera-ext/ivi_camera_config.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/media_codecs_performance_c2_adl.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/mfx_c2_store.conf
+
+Updater-aaos_iasw: chmod 0o664 device/intel/project-celadon/aaos_iasw/extra_files/codec2/mfx_c2_store.conf 
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/mfx_c2_store_gen13.conf
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/media_codecs.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/media_codecs_gen13.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/media_codecs_intel_c2_video.xml
+
+Updater-aaos_iasw: chmod 0o664 device/intel/project-celadon/aaos_iasw/extra_files/codec2/media_codecs_intel_c2_video.xml 
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/media_codecs_intel_c2_video_gen13.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/media_profiles_1080p.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/media_profiles_caas.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/codec2/auto_hal.in
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/usb-gadget/auto_hal.in
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/public-libraries/public.libraries.txt
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/lic.sh
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/docker_manager
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/containerd
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/containerd-shim-runc-v2
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/docker
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/dockerd
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/dockerd-dev
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/runc
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/fuse-overlayfs
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/99-ignore-keyboard.rules
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/99-ignore-mouse.rules
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/config.toml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/daemon.json
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/lic_test.sh
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/lcs.sh
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/ota.ini
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/extra_files/docker/ntfs-3g
+
+Updater-aaos_iasw: updating dir: device/intel/project-celadon/aaos_iasw/config-lts
+
+Updater-aaos_iasw: updating dir: device/intel/project-celadon/aaos_iasw/audio/default
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/compatibility_matrix.xml
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/manifest.xml
+
+Updater-aaos_iasw: chmod 0o664 device/intel/project-celadon/aaos_iasw/manifest.xml 
+
+Updater-aaos_iasw: updating dir: device/intel/project-celadon/aaos_iasw/overlay
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/system.prop
+
+Updater-aaos_iasw: chmod 0o664 device/intel/project-celadon/aaos_iasw/system.prop 
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/aaos_iasw.mk
+
+Updater-aaos_iasw: chmod 0o664 device/intel/project-celadon/aaos_iasw/aaos_iasw.mk 
+
+Updater-aaos_iasw: updating file: device/intel/project-celadon/aaos_iasw/display_settings.xml
+
+05:15:50 Build sandboxing disabled due to nsjail error.
+
+basename: missing operand
+
+Try 'basename --help' for more information.
+
+Running product configuration...
+
+basename: Needs 1 argument (see "basename --help")
+
+============================================
+
+PLATFORM_VERSION_CODENAME=REL
+
+PLATFORM_VERSION=15
+
+TARGET_PRODUCT=aaos_iasw
+
+TARGET_BUILD_VARIANT=userdebug
+
+TARGET_ARCH=x86_64
+
+TARGET_ARCH_VARIANT=silvermont
+
+TARGET_CPU_VARIANT=generic
+
+HOST_OS=linux
+
+HOST_OS_EXTRA=Linux-6.8.0-52-generic-x86_64-Ubuntu-22.04.4-LTS
+
+HOST_CROSS_OS=windows
+
+BUILD_ID=AP4A.241205.013.C1
+
+OUT_DIR=out
+
+============================================
+
+Running globs...
+
+[  0% 1/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-flags/pkg/google.golang.org/protobuf/internal/flags.a
+
+[  1% 2/132] compile out/host/linux-x86/bin/go/blueprint-optional/pkg/github.com/google/blueprint/optional.a
+
+[  2% 3/132] compile out/host/linux-x86/bin/go/go-cmp-internal-flags/pkg/github.com/google/go-cmp/cmp/internal/flags.a
+
+[  3% 4/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-pragma/pkg/google.golang.org/protobuf/internal/pragma.a
+
+[  3% 5/132] compile out/host/linux-x86/bin/go/soong-android-allowlists/pkg/android/soong/android/allowlists.a
+
+[  4% 6/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-set/pkg/google.golang.org/protobuf/internal/set.a
+
+[  5% 7/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-version/pkg/google.golang.org/protobuf/internal/version.a
+
+[  6% 8/132] compile out/host/linux-x86/bin/go/blueprint-deptools/pkg/github.com/google/blueprint/deptools.a
+
+[  6% 9/132] compile out/host/linux-x86/bin/go/go-cmp-internal-testprotos/pkg/github.com/google/go-cmp/cmp/internal/testprotos.a
+
+[  7% 10/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-detrand/pkg/google.golang.org/protobuf/internal/detrand.a
+
+[  8% 11/132] compile out/host/linux-x86/bin/go/blueprint-metrics/pkg/github.com/google/blueprint/metrics.a
+
+[  9% 12/132] compile out/host/linux-x86/bin/go/treble_report_app/pkg/tools/treble/build/report/app.a
+
+[  9% 13/132] compile out/host/linux-x86/bin/go/soong-response/pkg/android/soong/response.a
+
+[ 10% 14/132] compile out/host/linux-x86/bin/go/go-cmp-internal-function/pkg/github.com/google/go-cmp/cmp/internal/function.a
+
+[ 11% 15/132] compile out/host/linux-x86/bin/go/soong-remoteexec/pkg/android/soong/remoteexec.a
+
+[ 12% 16/132] compile out/host/linux-x86/bin/go/loadplugins/obj/loadplugins.a
+
+[ 12% 17/132] compile out/host/linux-x86/bin/go/golang-protobuf-android/pkg/google.golang.org/protobuf/android.a
+
+[ 13% 18/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-errors/pkg/google.golang.org/protobuf/internal/errors.a
+
+[ 14% 19/132] compile out/host/linux-x86/bin/go/soong-starlark-format/pkg/android/soong/starlark_fmt.a
+
+[ 15% 20/132] compile out/host/linux-x86/bin/go/go-cmp-internal-diff/pkg/github.com/google/go-cmp/cmp/internal/diff.a
+
+[ 15% 21/132] compile out/host/linux-x86/bin/go/go-cmp-internal-value/pkg/github.com/google/go-cmp/cmp/internal/value.a
+
+[ 16% 22/132] compile out/host/linux-x86/bin/go/golang-protobuf-encoding-protowire/pkg/google.golang.org/protobuf/encoding/protowire.a
+
+[ 17% 23/132] compile out/host/linux-x86/bin/go/treble_report_module/pkg/tools/treble/build/report/report.a
+
+[ 18% 24/132] compile out/host/linux-x86/bin/go/androidmk-parser/pkg/android/soong/androidmk/parser.a
+
+[ 18% 25/132] compile out/host/linux-x86/bin/go/treble_report_local/pkg/tools/treble/build/report/local.a
+
+[ 19% 26/132] compile out/host/linux-x86/bin/go/go-cmp-internal-teststructs/pkg/github.com/google/go-cmp/cmp/internal/teststructs.a
+
+[ 20% 27/132] compile out/host/linux-x86/bin/go/blueprint-pathtools/pkg/github.com/google/blueprint/pathtools.a
+
+[ 21% 28/132] compile out/host/linux-x86/bin/go/blueprint-parser/pkg/github.com/google/blueprint/parser.a
+
+[ 21% 29/132] compile out/host/linux-x86/bin/go/golang-protobuf-reflect-protoreflect/pkg/google.golang.org/protobuf/reflect/protoreflect.a
+
+[ 22% 30/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-descopts/pkg/google.golang.org/protobuf/internal/descopts.a
+
+[ 23% 31/132] compile out/host/linux-x86/bin/go/golang-protobuf-runtime-protoiface/pkg/google.golang.org/protobuf/runtime/protoiface.a
+
+[ 24% 32/132] link out/host/linux-x86/bin/go/loadplugins/obj/loadplugins
+
+[ 25% 33/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-messageset/pkg/google.golang.org/protobuf/internal/encoding/messageset.a
+
+[ 25% 34/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-strs/pkg/google.golang.org/protobuf/internal/strs.a
+
+[ 26% 35/132] cp out/host/linux-x86/bin/loadplugins
+
+[ 27% 36/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-genid/pkg/google.golang.org/protobuf/internal/genid.a
+
+[ 28% 37/132] create out/host/linux-x86/bin/go/soong_build/gen/plugin.go
+
+[ 28% 38/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-descfmt/pkg/google.golang.org/protobuf/internal/descfmt.a
+
+[ 29% 39/132] compile out/host/linux-x86/bin/go/golang-protobuf-reflect-protoregistry/pkg/google.golang.org/protobuf/reflect/protoregistry.a
+
+[ 30% 40/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-text/pkg/google.golang.org/protobuf/internal/encoding/text.a
+
+[ 31% 41/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-defval/pkg/google.golang.org/protobuf/internal/encoding/defval.a
+
+[ 31% 42/132] compile out/host/linux-x86/bin/go/go-cmp/pkg/github.com/google/go-cmp/cmp.a
+
+[ 32% 43/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-order/pkg/google.golang.org/protobuf/internal/order.a
+
+[ 33% 44/132] compile out/host/linux-x86/bin/go/blueprint-proptools/pkg/github.com/google/blueprint/proptools.a
+
+[ 34% 45/132] compile out/host/linux-x86/bin/go/golang-protobuf-proto/pkg/google.golang.org/protobuf/proto.a
+
+[ 34% 46/132] compile out/host/linux-x86/bin/go/soong-shared/pkg/android/soong/shared.a
+
+[ 35% 47/132] compile out/host/linux-x86/bin/go/golang-protobuf-encoding-prototext/pkg/google.golang.org/protobuf/encoding/prototext.a
+
+[ 36% 48/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-filedesc/pkg/google.golang.org/protobuf/internal/filedesc.a
+
+[ 37% 49/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-tag/pkg/google.golang.org/protobuf/internal/encoding/tag.a
+
+[ 37% 50/132] compile out/host/linux-x86/bin/go/blueprint/pkg/github.com/google/blueprint.a
+
+[ 38% 51/132] compile out/host/linux-x86/bin/go/soong/pkg/android/soong.a
+
+[ 39% 52/132] compile out/host/linux-x86/bin/go/soong-android-soongconfig/pkg/android/soong/android/soongconfig.a
+
+[ 40% 53/132] compile out/host/linux-x86/bin/go/blueprint-bootstrap-bpdoc/pkg/github.com/google/blueprint/bootstrap/bpdoc.a
+
+[ 40% 54/132] compile out/host/linux-x86/bin/go/soong-bazel/pkg/android/soong/bazel.a
+
+[ 41% 55/132] compile out/host/linux-x86/bin/go/blueprint-bootstrap/pkg/github.com/google/blueprint/bootstrap.a
+
+[ 42% 56/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-impl/pkg/google.golang.org/protobuf/internal/impl.a
+
+[ 43% 57/132] compile out/host/linux-x86/bin/go/golang-protobuf-internal-filetype/pkg/google.golang.org/protobuf/internal/filetype.a
+
+[ 43% 58/132] compile out/host/linux-x86/bin/go/golang-protobuf-runtime-protoimpl/pkg/google.golang.org/protobuf/runtime/protoimpl.a
+
+[ 44% 59/132] compile out/host/linux-x86/bin/go/soong-android_team_proto/pkg/android/soong/android/team_proto.a
+
+[ 45% 60/132] compile out/host/linux-x86/bin/go/soong-ui-mk_metrics_proto/pkg/android/soong/ui/metrics/mk_metrics_proto.a
+
+[ 46% 61/132] compile out/host/linux-x86/bin/go/soong-ui-metrics_upload_proto/pkg/android/soong/ui/metrics/upload_proto.a
+
+[ 46% 62/132] compile out/host/linux-x86/bin/go/soong-ui-bazel_metrics_proto/pkg/android/soong/ui/metrics/bazel_metrics_proto.a
+
+[ 47% 63/132] compile out/host/linux-x86/bin/go/soong-testing-code_metadata_internal_proto/pkg/android/soong/testing/code_metadata_internal_proto.a
+
+[ 48% 64/132] compile out/host/linux-x86/bin/go/sbox_proto/pkg/android/soong/cmd/sbox/sbox_proto.a
+
+[ 49% 65/132] compile out/host/linux-x86/bin/go/soong-testing-test_spec_proto/pkg/android/soong/testing/test_spec_proto.a
+
+[ 50% 66/132] compile out/host/linux-x86/bin/go/soong-ui-bp2build_metrics_proto/pkg/android/soong/ui/metrics/bp2build_metrics_proto.a
+
+[ 50% 67/132] compile out/host/linux-x86/bin/go/soong-ui-metrics_proto/pkg/android/soong/ui/metrics/metrics_proto.a
+
+[ 51% 68/132] compile out/host/linux-x86/bin/go/soong-ui-metrics/pkg/android/soong/ui/metrics.a
+
+[ 52% 69/132] compile out/host/linux-x86/bin/go/soong-android/pkg/android/soong/android.a
+
+[ 53% 70/132] compile out/host/linux-x86/bin/go/soong-icu/pkg/android/soong/icu.a
+
+[ 53% 71/132] compile out/host/linux-x86/bin/go/soong-provenance/pkg/android/soong/provenance.a
+
+[ 54% 72/132] compile out/host/linux-x86/bin/go/soong-robolectric/pkg/android/soong/robolectric.a
+
+[ 55% 73/132] compile out/host/linux-x86/bin/go/cuttlefish-soong-rules/pkg/android/soong/cuttlefish.a
+
+[ 56% 74/132] compile out/host/linux-x86/bin/go/soong-snapshot/pkg/android/soong/snapshot.a
+
+[ 56% 75/132] compile out/host/linux-x86/bin/go/soong-bloaty/pkg/android/soong/bloaty.a
+
+[ 57% 76/132] compile out/host/linux-x86/bin/go/kernel-config-soong-rules/pkg/android/soong/kernel/configs.a
+
+[ 58% 77/132] compile out/host/linux-x86/bin/go/soong-tradefed/pkg/android/soong/tradefed.a
+
+[ 59% 78/132] compile out/host/linux-x86/bin/go/soong-java-config/pkg/android/soong/java/config.a
+
+[ 59% 79/132] compile out/host/linux-x86/bin/go/soong-compliance/pkg/android/soong/compliance.a
+
+[ 60% 80/132] compile out/host/linux-x86/bin/go/soong-java-config-error_prone/pkg/android/soong/java/config/error_prone.a
+
+[ 61% 81/132] compile out/host/linux-x86/bin/go/soong-aidl-library/pkg/android/soong/aidl_library.a
+
+[ 62% 82/132] compile out/host/linux-x86/bin/go/soong-fuzz/pkg/android/soong/fuzz.a
+
+[ 62% 83/132] compile out/host/linux-x86/bin/go/soong-aconfig-build_flags/pkg/android/soong/aconfig/build_flags.a
+
+[ 63% 84/132] compile out/host/linux-x86/bin/go/soong-golang/pkg/android/soong/golang.a
+
+[ 64% 85/132] compile out/host/linux-x86/bin/go/soong-phony/pkg/android/soong/phony.a
+
+[ 65% 86/132] compile out/host/linux-x86/bin/go/soong-testing/pkg/android/soong/testing.a
+
+[ 65% 87/132] compile out/host/linux-x86/bin/go/soong-aconfig/pkg/android/soong/aconfig.a
+
+[ 66% 88/132] compile out/host/linux-x86/bin/go/soong-dexpreopt/pkg/android/soong/dexpreopt.a
+
+[ 67% 89/132] compile out/host/linux-x86/bin/go/soong-genrule/pkg/android/soong/genrule.a
+
+[ 68% 90/132] compile out/host/linux-x86/bin/go/soong-etc/pkg/android/soong/etc.a
+
+[ 68% 91/132] compile out/host/linux-x86/bin/go/soong-cc-config/pkg/android/soong/cc/config.a
+
+[ 69% 92/132] compile out/host/linux-x86/bin/go/soong-fs_config/pkg/android/soong/fs_config.a
+
+[ 70% 93/132] compile out/host/linux-x86/bin/go/soong-xml/pkg/android/soong/xml.a
+
+[ 71% 94/132] compile out/host/linux-x86/bin/go/soong-libchrome/pkg/android/soong/external/libchrome.a
+
+[ 71% 95/132] compile out/host/linux-x86/bin/go/soong-wayland-protocol-codegen/pkg/android/soong/external/wayland-protocol.a
+
+[ 72% 96/132] compile out/host/linux-x86/bin/go/soong-rust-config/pkg/android/soong/rust/config.a
+
+[ 73% 97/132] compile out/host/linux-x86/bin/go/soong-cc/pkg/android/soong/cc.a
+
+[ 74% 98/132] compile out/host/linux-x86/bin/go/mfx_c2/pkg/android/soong/vendor/intel/mfx_c2.a
+
+[ 75% 99/132] compile out/host/linux-x86/bin/go/arm_compute_library_nn_driver/pkg/arm_compute_library_nn_driver.a
+
+[ 75% 100/132] compile out/host/linux-x86/bin/go/soong-kernel/pkg/android/soong/kernel.a
+
+[ 76% 101/132] compile out/host/linux-x86/bin/go/soong-clang-prebuilts/pkg/android/soong/prebuilts/clang/host/linux-x86/clangprebuilts.a
+
+[ 77% 102/132] compile out/host/linux-x86/bin/go/soong-clang/pkg/android/soong/external/clang.a
+
+[ 78% 103/132] compile out/host/linux-x86/bin/go/soong-android-sdk/pkg/android/soong/android_sdk.a
+
+[ 78% 104/132] compile out/host/linux-x86/bin/go/soong-llvm/pkg/android/soong/external/llvm.a
+
+[ 79% 105/132] compile out/host/linux-x86/bin/go/soong-linkerconfig/pkg/android/soong/linkerconfig.a
+
+[ 80% 106/132] compile out/host/linux-x86/bin/go/soong-libbpf/pkg/android/soong/bpf/libbpf.a
+
+[ 81% 107/132] compile out/host/linux-x86/bin/go/soong-bpf/pkg/android/soong/bpf.a
+
+[ 81% 108/132] compile out/host/linux-x86/bin/go/soong-python/pkg/android/soong/python.a
+
+[ 82% 109/132] compile out/host/linux-x86/bin/go/soong-rust/pkg/android/soong/rust.a
+
+[ 83% 110/132] compile out/host/linux-x86/bin/go/soong-rust-prebuilts/pkg/android/soong/prebuilts/rust/rustprebuilts.a
+
+[ 84% 111/132] compile out/host/linux-x86/bin/go/soong-java/pkg/android/soong/java.a
+
+[ 84% 112/132] compile out/host/linux-x86/bin/go/soong-suite-harness/pkg/android/soong/tradefed/suite_harness.a
+
+[ 85% 113/132] compile out/host/linux-x86/bin/go/xsdc-soong-rules/pkg/android/soong/xsdc.a
+
+[ 86% 114/132] compile out/host/linux-x86/bin/go/soong-tradefed-modules/pkg/android/soong/tradefed_modules.a
+
+[ 87% 115/132] compile out/host/linux-x86/bin/go/soong-sh/pkg/android/soong/sh.a
+
+[ 87% 116/132] compile out/host/linux-x86/bin/go/soong-api/pkg/android/soong/api.a
+
+[ 88% 117/132] compile out/host/linux-x86/bin/go/soong-sysprop/pkg/android/soong/sysprop.a
+
+[ 89% 118/132] compile out/host/linux-x86/bin/go/soong-csuite/pkg/android/soong/csuite.a
+
+[ 90% 119/132] compile out/host/linux-x86/bin/go/soong-aconfig-codegen/pkg/android/soong/aconfig/codegen.a
+
+[ 90% 120/132] compile out/host/linux-x86/bin/go/hidl-soong-rules/pkg/android/soong/hidl.a
+
+[ 91% 121/132] compile out/host/linux-x86/bin/go/soong-filesystem/pkg/android/soong/filesystem.a
+
+[ 92% 122/132] compile out/host/linux-x86/bin/go/aidl-soong-rules/pkg/android/soong/aidl.a
+
+[ 93% 123/132] compile out/host/linux-x86/bin/go/soong-selinux/pkg/android/soong/selinux.a
+
+[ 93% 124/132] compile out/host/linux-x86/bin/go/vintf-compatibility-matrix-soong-rules/pkg/android/soong/vintf-compatibility-matrix.a
+
+[ 94% 125/132] compile out/host/linux-x86/bin/go/soong-apex/pkg/android/soong/apex.a
+
+[ 95% 126/132] compile out/host/linux-x86/bin/go/soong-art/pkg/android/soong/art.a
+
+[ 96% 127/132] compile out/host/linux-x86/bin/go/soong-sdk/pkg/android/soong/sdk.a
+
+[ 96% 128/132] compile out/host/linux-x86/bin/go/soong-bp2build/pkg/android/soong/bp2build.a
+
+[ 97% 129/132] compile out/host/linux-x86/bin/go/soong_build/obj/soong_build.a
+
+[ 98% 130/132] link out/host/linux-x86/bin/go/soong_build/obj/soong_build
+
+[ 99% 131/132] cp out/host/linux-x86/bin/soong_build
+
+[100% 132/132] analyzing Android.bp files and generating ninja file at out/soong/build.aaos_iasw.ninja
+
+Warning: Module 'androidx.wear_wear' depends on non-existing optional_uses_libs 'wear-sdk'
+
+Warning: Module 'androidx.wear.compose_compose-foundation' depends on non-existing optional_uses_libs 'wear-sdk'
+
+out/build-aaos_iasw-cleanspec.ninja is missing, regenerating...
+
+out/build-aaos_iasw.ninja is missing, regenerating...
+
+[100% 133/133] initializing legacy Make module parser ...
+
+[ 50% 134/265] including out/soong/installs-aaos_iasw.mk ...
+
+[ 50% 135/265] including out/soong/Android-aaos_iasw.mk ...
+
+[ 51% 136/265] including art/Android.mk ...
+
+[ 51% 137/265] including bootable/deprecated-ota/updater/Android.mk ...
+
+[ 52% 138/265] including bootable/recovery/Android.mk ...
+
+[ 52% 139/265] including build/make/target/board/Android.mk ...
+
+device/intel/project-celadon/aaos_iasw/AndroidBoard.mk:107: warning: BOARD_SFU_UPDATE not found, OTA updates will not provide a firmware capsule
+
+device/intel/project-celadon/aaos_iasw/AndroidBoard.mk:110: warning: EFI_EMMC_BIN not found, flashfiles will not include 2nd stage EMMC firmware
+
+device/intel/project-celadon/aaos_iasw/AndroidBoard.mk:113: warning: EFI_IFWI_BIN not found, IFWI binary will not be provided in out/dist/
+
+device/intel/project-celadon/aaos_iasw/AndroidBoard.mk:116: warning: EFI_AFU_BIN not found, AFU IFWI binary will not be provided in out/dist/
+
+cat: out/target/product/aaos_iasw/obj/kernel/include/config/kernel.release: No such file or directory
+
+[ 52% 140/265] including build/make/target/product/gsi/Android.mk ...
+
+[ 53% 141/265] including build/make/target/product/security/Android.mk ...
+
+[ 53% 142/265] including build/make/tools/fs_config/Android.mk ...
+
+[ 53% 143/265] including device/amlogic/yukawa/Android.mk ...
+
+[ 54% 144/265] including device/generic/goldfish/Android.mk ...
+
+[ 54% 145/265] including device/google/caimito/Android.mk ...
+
+[ 55% 146/265] including device/google/comet/Android.mk ...
+
+[ 55% 147/265] including device/google/zumapro/Android.mk ...
+
+[ 55% 148/265] including device/intel/civ/host/backend/battery/vm_battery_utility/Android.mk ...
+
+[ 56% 149/265] including device/intel/civ/host/backend/thermal/vm_thermal_utility/Android.mk ...
+
+[ 56% 150/265] including device/intel/common/PlayAutoInstallConfig/Android.mk ...
+
+[ 56% 151/265] including device/intel/common/audio/policy-configuration/Android.mk ...
+
+[ 57% 152/265] including device/intel/common/bluetooth/default/Android.mk ...
+
+[ 57% 153/265] including device/intel/common/bluetooth/rfkill/Android.mk ...
+
+[ 58% 154/265] including device/intel/common/telephony-config/Android.mk ...
+
+[ 58% 155/265] including device/intel/common/verity-warning/Android.mk ...
+
+[ 58% 156/265] including device/intel/common/wlan/Android.mk ...
+
+[ 59% 157/265] including device/linaro/dragonboard/Android.mk ...
+
+[ 59% 158/265] including device/linaro/hikey/Android.mk ...
+
+[ 60% 159/265] including device/linaro/poplar/audio/Android.mk ...
+
+[ 60% 160/265] including device/linaro/poplar/bluetooth/Android.mk ...
+
+[ 60% 161/265] including device/linaro/poplar/media/Android.mk ...
+
+[ 61% 162/265] including device/linaro/poplar/optee/Android.mk ...
+
+[ 61% 163/265] including device/linaro/poplar/proprietary/Android.mk ...
+
+[ 61% 164/265] including device/linaro/poplar/vendor/Android.mk ...
+
+[ 62% 165/265] including device/linaro/poplar/wifi/Android.mk ...
+
+[ 62% 166/265] including external/fmtlib/support/Android.mk ...
+
+[ 63% 167/265] including external/google-breakpad/Android.mk ...
+
+[ 63% 168/265] including external/googletest/googletest/Android.mk ...
+
+[ 63% 169/265] including external/libaom/third_party/libwebm/Android.mk ...
+
+[ 64% 170/265] including external/libusb/Android.mk ...
+
+[ 64% 171/265] including external/libvpx/build/make/Android.mk ...
+
+[ 64% 172/265] including external/libvpx/test/android/Android.mk ...
+
+[ 65% 173/265] including external/libvpx/third_party/libwebm/Android.mk ...
+
+[ 65% 174/265] including external/libwebm/Android.mk ...
+
+[ 66% 175/265] including external/libwebsockets/Android.mk ...
+
+[ 66% 176/265] including external/thermal_daemon/Android.mk ...
+
+[ 66% 177/265] including external/vulkan-validation-layers/Android.mk ...
+
+[ 67% 178/265] including external/walt/android/WALT/app/src/main/jni/Android.mk ...
+
+[ 67% 179/265] including external/webp/Android.mk ...
+
+[ 67% 180/265] including external/wpa_supplicant_8/Android.mk ...
+
+[ 68% 181/265] including hardware/broadcom/libbt/Android.mk ...
+
+[ 68% 182/265] including hardware/broadcom/wlan/bcmdhd/Android.mk ...
+
+[ 69% 183/265] including hardware/google/gchips/Android.mk ...
+
+[ 69% 184/265] including hardware/google/graphics/common/Android.mk ...
+
+[ 69% 185/265] including hardware/google/graphics/gs101/libhwc2.1/Android.mk ...
+
+[ 70% 186/265] including hardware/google/graphics/gs201/libhwc2.1/Android.mk ...
+
+[ 70% 187/265] including hardware/google/graphics/zuma/libhwc2.1/Android.mk ...
+
+[ 70% 188/265] including hardware/google/graphics/zumapro/libhwc2.1/Android.mk ...
+
+[ 71% 189/265] including hardware/intel/display/libmemtrack/Android.mk ...
+
+[ 71% 190/265] including hardware/intel/efiwrapper/Android.mk ...
+
+hardware/intel/efiwrapper/host/Android.mk:25: warning: BUILD_HOST_EXECUTABLE has been deprecated. Please convert to Soong.
+
+hardware/intel/efiwrapper/libefiwrapper/Android.mk:50: warning: BUILD_HOST_STATIC_LIBRARY has been deprecated. Please convert to Soong.
+
+[ 72% 191/265] including hardware/intel/external/clvk-prebuilts/Android.mk ...
+
+[ 72% 192/265] including hardware/intel/external/coreboot/payloads/libpayload/Android.mk ...
+
+[ 72% 193/265] including hardware/intel/external/gnu-efi/Android.mk ...
+
+[ 73% 194/265] including hardware/intel/external/mdapi/Android.mk ...
+
+[ 73% 195/265] including hardware/intel/external/media/hdcp/Android.mk ...
+
+[ 73% 196/265] including hardware/intel/external/mesa3d-intel/android/Android.mk ...
+
+[ 74% 197/265] including hardware/intel/external/opencl/intel-graphics-compiler/Android.mk ...
+
+[ 74% 198/265] including hardware/intel/kernelflinger/Android.mk ...
+
+/bin/bash: line 1: test: -gt: unary operator expected
+
+hardware/intel/kernelflinger/libkernelflinger/tools/Android.mk:12: warning: BUILD_HOST_EXECUTABLE has been deprecated. Please convert to Soong.
+
+[ 75% 199/265] including hardware/intel/libbt-vendor-intel/Android.mk ...
+
+[ 75% 200/265] including hardware/intel/power/Android.mk ...
+
+[ 75% 201/265] including hardware/intel/sensors/mediation/Android.mk ...
+
+[ 76% 202/265] including hardware/intel/wlan/libwifihal/open/Android.mk ...
+
+[ 76% 203/265] including hardware/interfaces/configstore/1.1/default/Android.mk ...
+
+[ 76% 204/265] including hardware/interfaces/graphics/composer/2.2/default/Android.mk ...
+
+[ 77% 205/265] including hardware/interfaces/soundtrigger/2.0/default/Android.mk ...
+
+[ 77% 206/265] including hardware/interfaces/soundtrigger/2.1/default/Android.mk ...
+
+[ 78% 207/265] including hardware/invensense/Android.mk ...
+
+[ 78% 208/265] including hardware/qcom/wlan/Android.mk ...
+
+[ 78% 209/265] including hardware/ril/libril/Android.mk ...
+
+[ 79% 210/265] including hardware/ril/reference-ril/Android.mk ...
+
+[ 79% 211/265] including hardware/ril/rild/Android.mk ...
+
+[ 80% 212/265] including hardware/synaptics/wlan/synadhd/Android.mk ...
+
+[ 80% 213/265] including system/libhidl/vintfdata/Android.mk ...
+
+[ 80% 214/265] including system/sepolicy/Android.mk ...
+
+[ 81% 215/265] including tools/tradefederation/prebuilts/test_harness/Android.mk ...
+
+[ 81% 216/265] including vendor/google/gas/Android.mk ...
+
+[ 81% 217/265] including vendor/intel/app_icon_manager/guest/ServiceAgent/Android.mk ...
+
+[ 82% 218/265] including vendor/intel/app_icon_manager/guest/agent-client/Android.mk ...
+
+[ 82% 219/265] including vendor/intel/audio/audio_aaos/Android.mk ...
+
+[ 83% 220/265] including vendor/intel/car_packages/Android.mk ...
+
+[ 83% 221/265] including vendor/intel/external/apps/Android.mk ...
+
+[ 83% 222/265] including vendor/intel/external/hwcomposer-intel/Android.mk ...
+
+[ 84% 223/265] including vendor/intel/external/hwcomposer-vhal/Android.mk ...
+
+[ 84% 224/265] including vendor/intel/external/mediasdk_opensource/Android.mk ...
+
+[ 84% 225/265] including vendor/intel/external/onevpl-intel-gpu/Android.mk ...
+
+[ 85% 226/265] including vendor/intel/external/pciutils-intel/Android.mk ...
+
+[ 85% 227/265] including vendor/intel/external/project-celadon/audio/Android.mk ...
+
+[ 86% 228/265] including vendor/intel/external/project-celadon/camera-vhal/Android.mk ...
+
+[ 86% 229/265] including vendor/intel/fw/evmm/tools/profile/Android.mk ...
+
+[ 86% 230/265] including vendor/intel/hardware/interfaces/lights/Android.mk ...
+
+[ 87% 231/265] including vendor/intel/hardware/interfaces/nn_gpu/Android.mk ...
+
+[ 87% 232/265] including vendor/intel/houdini/Android.mk ...
+
+vendor/intel/houdini/Android.mk:30: warning: TARGET_USES_64_BIT_BINDER has been deprecated. All devices use 64-bit binder by default now. Uses of TARGET_USES_64_BIT_BINDER should be removed..
+
+[ 87% 233/265] including vendor/intel/libdmi/Android.mk ...
+
+[ 88% 234/265] including vendor/intel/libstagefrighthw/Android.mk ...
+
+[ 88% 235/265] including vendor/intel/lic-apps/lcsClientInAndroid/Android.mk ...
+
+[ 89% 236/265] including vendor/intel/lic-apps/lcsClientInAndroidLocal/Android.mk ...
+
+[ 89% 237/265] including vendor/intel/lic-apps/licClientInAndroid/Android.mk ...
+
+[ 89% 238/265] including vendor/intel/mediasdk_omx_il/Android.mk ...
+
+[ 90% 239/265] including vendor/intel/mediasdk_release/Android.mk ...
+
+[ 90% 240/265] including vendor/intel/optee/optee_apps/gatekeeper/Android.mk ...
+
+[ 90% 241/265] including vendor/intel/optee/optee_apps/keymaster/Android.mk ...
+
+[ 91% 242/265] including vendor/intel/optee/optee_os/ta/gatekeeper/Android.mk ...
+
+[ 91% 243/265] including vendor/intel/optee/optee_os/ta/keymaster/Android.mk ...
+
+[ 92% 244/265] including vendor/intel/optee/optee_os/ta/pkcs11/Android.mk ...
+
+[ 92% 245/265] including vendor/intel/optee/optee_test/Android.mk ...
+
+$LOCAL_SRC_FILES =  host/supp_plugin/test_supp_plugin.c
+
+[ 92% 246/265] including vendor/intel/pstore-clean/Android.mk ...
+
+[ 93% 247/265] including vendor/intel/tools/ittapi/Android.mk ...
+
+[ 93% 248/265] including vendor/intel/tools/log_capture/backtrace/Android.mk ...
+
+[ 93% 249/265] including vendor/intel/tools/log_capture/crashlog/Android.mk ...
+
+vendor/intel/tools/log_capture/crashlog/Android.mk:92: warning: BUILD_COPY_HEADERS has been deprecated. See https://android.googlesource.com/platform/build/+/master/Changes.md#copy_headers.
+
+[ 94% 250/265] including vendor/intel/tools/log_capture/debug_anr/Android.mk ...
+
+[ 94% 251/265] including vendor/intel/tools/log_capture/intel_prop/Android.mk ...
+
+[ 95% 252/265] including vendor/intel/tools/log_capture/lct/cli/Android.mk ...
+
+[ 95% 253/265] including vendor/intel/tools/log_capture/lct/lib/Android.mk ...
+
+[ 95% 254/265] including vendor/intel/tools/log_capture/lct/libsock/Android.mk ...
+
+[ 96% 255/265] including vendor/intel/tools/log_capture/libbtdump/Android.mk ...
+
+[ 96% 256/265] including vendor/intel/tools/log_capture/log-watch/Android.mk ...
+
+[ 96% 257/265] including vendor/intel/tools/log_capture/log_library/Android.mk ...
+
+[ 97% 258/265] including vendor/intel/tools/log_capture/log_service/Android.mk ...
+
