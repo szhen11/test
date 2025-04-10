@@ -1,0 +1,233 @@
+===============
+Initial Connection!!!
+Closing WebSocket Connection for step. 
+End of log
+===============
+===============
+Initial Connection!!!
+Executing commands in dir /home/celadon/workspace
+<Connection host=10.54.29.174 user=celadon port=30379>
+Starting command: cd /home/celadon/workspace && /home/celadon/.bin/repo forall os.android.bsp.audio-aaos -c git         fetch https://github.com/sadhan-intel/os.android.bsp.audio-aaos.git media/coverity_fix
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+Command Execution Time=20.376903 seconds
+Command Exit Status: 0
+Starting command: cd /home/celadon/workspace && /home/celadon/.bin/repo forall os.android.bsp.audio-aaos -c git cherry-pick d99513a7b67ebb4d87cff7399852deb3cf04d032..03fb42d1a23046641d7f69465b51814bdd6e1590
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+[detached HEAD 42feab5] Change-Id: I690c46b55cd48eeb1810ea95c6ad1b3afd1804c0 Signed-off-by: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Author: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Date: Mon Mar 3 13:47:43 2025 +0000
+
+ 15 files changed, 83 insertions(+), 33 deletions(-)
+
+Auto-merging aidl/primary/StreamPrimary.cpp
+
+[detached HEAD 3c06d08] Fix Coverity issue
+
+ Author: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Date: Sat Mar 1 17:56:12 2025 +0000
+
+ 13 files changed, 101 insertions(+), 24 deletions(-)
+
+Command Execution Time=20.05138 seconds
+Command Exit Status: 0
+Starting command: cd /home/celadon/workspace && /home/celadon/.bin/repo forall os.android.bsp.audio-aaos -c git         fetch https://github.com/sadhan-intel/os.android.bsp.audio-aaos.git media/audio_coverity
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+[detached HEAD 42feab5] Change-Id: I690c46b55cd48eeb1810ea95c6ad1b3afd1804c0 Signed-off-by: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Author: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Date: Mon Mar 3 13:47:43 2025 +0000
+
+ 15 files changed, 83 insertions(+), 33 deletions(-)
+
+Auto-merging aidl/primary/StreamPrimary.cpp
+
+[detached HEAD 3c06d08] Fix Coverity issue
+
+ Author: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Date: Sat Mar 1 17:56:12 2025 +0000
+
+ 13 files changed, 101 insertions(+), 24 deletions(-)
+
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+Command Execution Time=20.048687 seconds
+Command Exit Status: 0
+Starting command: cd /home/celadon/workspace && /home/celadon/.bin/repo forall os.android.bsp.audio-aaos -c git cherry-pick 3ee8b019614e9ecade84f8cbb9fb90aeedb69408..24576e74b8b1a28e2a49c19ef244f8b7380dc4d9
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+[detached HEAD 42feab5] Change-Id: I690c46b55cd48eeb1810ea95c6ad1b3afd1804c0 Signed-off-by: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Author: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Date: Mon Mar 3 13:47:43 2025 +0000
+
+ 15 files changed, 83 insertions(+), 33 deletions(-)
+
+Auto-merging aidl/primary/StreamPrimary.cpp
+
+[detached HEAD 3c06d08] Fix Coverity issue
+
+ Author: sadhansx <sadhanx.siddha.mohanty@intel.com>
+
+ Date: Sat Mar 1 17:56:12 2025 +0000
+
+ 13 files changed, 101 insertions(+), 24 deletions(-)
+
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+
+
+... A new version of repo (2.50) is available.
+
+... New version is available at: /home/celadon/workspace/.repo/repo/repo
+
+... The launcher is run from: /home/celadon/.bin/repo
+
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+
+!!! to get an update installed.
+
+
+
+Auto-merging aidl/Configuration.cpp
+
+CONFLICT (content): Merge conflict in aidl/Configuration.cpp
+
+Auto-merging aidl/EffectConfig.cpp
+
+Auto-merging aidl/Module.cpp
+
+Auto-merging aidl/Stream.cpp
+
+Auto-merging aidl/bluetooth/ModuleBluetooth.cpp
+
+Auto-merging aidl/include/core-impl/Stream.h
+
+Auto-merging aidl/r_submix/StreamRemoteSubmix.cpp
+
+Command Execution Time=20.054469 seconds
+Closing WebSocket Connection for step. 
+End of log
+===============
